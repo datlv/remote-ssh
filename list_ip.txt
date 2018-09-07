@@ -1,0 +1,11 @@
+13.229.71.175 supplychaindb1
+54.255.205.146 supplychaindb2
+54.179.187.79 supplychaindb3
+54.255.236.246 peer0.org1.deevo.com rca.org1.deevo.com
+18.136.105.95 peer0.org2.deevo.com rca.org2.deevo.com
+18.136.104.14 peer0.org3.deevo.com rca.org3.deevo.com
+13.250.112.83 peer0.org4.deevo.com rca.org4.deevo.com
+52.221.181.66 peer0.org5.deevo.com rca.org5.deevo.com
+54.169.140.0 orderer0.org0.deevo.com rca.org0.deevo.com
+
+
