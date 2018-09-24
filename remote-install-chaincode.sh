@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/supply-chain-network/scripts/ && bash ./chaincode-caliper.sh -c mychannel -n simple ; sleep 3; exit; '
