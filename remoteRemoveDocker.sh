@@ -10,11 +10,9 @@ n=7 ; eval a$n="13.250.112.83"
 n=8 ; eval a$n="52.221.181.66"
 n=9 ; eval a$n="54.169.140.0"
 
-for i in 1 2 3 4 5 6 7 8
+for i in 4 5 6 7 8
 do
     eval ip=\$a$i
     echo ${ip}
-    ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem  ubuntu@${ip} 'kill $(pidof java); exit;'
+   ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem  ubuntu@${ip} '/opt/gopath/src/github.com/deevotech/supply-chain-network/scripts/remove-docker-chaincode.sh; exit; '
 done
-
-

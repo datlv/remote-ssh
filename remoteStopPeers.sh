@@ -14,6 +14,6 @@ for i in 4 5 6 7 8
 do
     eval ip=\$a$i
     echo ${ip}
-   ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem  ubuntu@${ip} 'kill $(pidof peer); exit;'
+   ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem  ubuntu@${ip} 'kill $(pidof peer); exit; '
 done
 
