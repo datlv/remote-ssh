@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@18.136.126.89 ' cd /opt/gopath/src/github.com/deevotech/supply-chain-network/scripts/; ./create-channel.sh -c mychannel; sleep 3; exit; '

@@ -1,0 +1,13 @@
+13.229.67.40 peer0.org1.deevo.com rca.org1.deevo.com
+13.250.109.169 peer0.org2.deevo.com rca.org2.deevo.com
+13.229.125.149 peer0.org3.deevo.com rca.org3.deevo.com
+54.179.181.86 peer0.org4.deevo.com rca.org4.deevo.com
+54.254.189.216 peer0.org5.deevo.com rca.org5.deevo.com
+18.136.126.89 orderer0.org0.deevo.com rca.org0.deevo.com
+
+172.31.18.227 peer0.org1.deevo.com rca.org1.deevo.com
+172.31.17.27 peer0.org2.deevo.com rca.org2.deevo.com
+172.31.30.107 peer0.org3.deevo.com rca.org3.deevo.com
+172.31.30.141 peer0.org4.deevo.com rca.org4.deevo.com
+172.31.19.217 peer0.org5.deevo.com rca.org5.deevo.com
+172.31.17.148 orderer0.org0.deevo.com rca.org0.deevo.com
