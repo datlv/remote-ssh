@@ -6,6 +6,13 @@
 18.136.104.14 peer0.org3.deevo.com rca.org3.deevo.com 172.31.21.211
 13.250.112.83 peer0.org4.deevo.com rca.org4.deevo.com 172.31.30.123
 52.221.181.66 peer0.org5.deevo.com rca.org5.deevo.com  172.31.28.37
-54.169.140.0 orderer0.org0.deevo.com rca.org0.deevo.com 172.31.28.66
+54.169.140.0 orderer0.org0.deevo.com rca.org0.deevo.com 
+54.255.236.246 peer0.org1.deevo.com rca.org1.deevo.com
+18.136.105.95 peer0.org2.deevo.com rca.org2.deevo.com
+18.136.104.14 peer0.org3.deevo.com rca.org3.deevo.com
+13.250.112.83 peer0.org4.deevo.com rca.org4.deevo.com
+52.221.181.66 peer0.org5.deevo.com rca.org5.deevo.com
+54.169.140.0 orderer0.org0.deevo.com rca.org0.deevo.com
+./get-remote-config.sh -d /opt/gopath/src/github.com/deevotech/supply-chain-service/configs -t /home/datlv/Documents/deevo/tmp -p 54.169.140.0 -k /home/datlv/Documents/deevo/key/dev-full-rights.pem -g "org0 org1 org2 org3 org4 org5"
 
 
