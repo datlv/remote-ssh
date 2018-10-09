@@ -11,3 +11,9 @@
 172.31.30.141 peer0.org4.deevo.com rca.org4.deevo.com
 172.31.19.217 peer0.org5.deevo.com rca.org5.deevo.com
 172.31.17.148 orderer0.org0.deevo.com rca.org0.deevo.com
+
+# list of ordering service node
+0 172.31.22.203 54.169.181.172
+1 172.31.31.25 13.250.35.59
+2 172.31.30.199 13.229.233.128
+3 172.31.20.118 54.179.143.121
