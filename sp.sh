@@ -27,6 +27,8 @@ n=7 ; eval a$n="13.250.112.83"
 n=8 ; eval a$n="52.221.181.66"
 n=9 ; eval a$n="54.169.140.0"
 n=10 ; eval a$n="18.136.205.13"
+n=11 ; eval a$n="52.77.238.1"
+n=12 ; eval a$n="13.250.109.150"
 eval ip=\$a$i
 echo ${ip}
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@${ip}
