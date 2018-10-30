@@ -18,4 +18,15 @@
 2 172.31.30.199 13.229.233.128
 3 172.31.20.118 54.179.143.121
 
+172.31.18.227 peer1.org1.deevo.io rca.org1.deevo.io
+172.31.17.27 peer1.org2.deevo.io rca.org2.deevo.io
+172.31.30.107 peer1.org3.deevo.io rca.org3.deevo.io
+172.31.30.141 peer1.org4.deevo.io rca.org4.deevo.io
+172.31.19.217 peer1.org5.deevo.io rca.org5.deevo.io
+172.31.17.148 orderer1.org0.deevo.io rca.org0.deevo.io
+172.31.22.203 bft.node.0 rca.replicas.deevo.io
+172.31.31.25 bft.node.1
+172.31.30.199 bft.node.2
+172.31.20.118 bft.node.3
+
 sudo mkdir /opt/gopath && sudo chmod -R 777 /opt/gopath && mkdir /opt/gopath/src && mkdir /opt/gopath/src/github.com && mkdir /opt/gopath/src/github.com/deevotech && ssh-keygen && cat ~/.ssh/id_rsa.pub;
