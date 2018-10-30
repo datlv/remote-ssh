@@ -10,7 +10,7 @@ do
     eval ip=\$a$i
     echo ${ip}
     #R=$(( $i - 1 ))
-    #scp -i /home/datlv/Documents/deevo/key/dev-full-rights.pem -r /home/datlv/Documents/deevo/configproduction/* ubuntu@${ip}:/home/ubuntu/hyperledgerconfig/data/
+    scp -i /home/datlv/Documents/deevo/key/dev-full-rights.pem -r /home/datlv/Documents/deevo/configproduction/* ubuntu@${ip}:/home/ubuntu/hyperledgerconfig/data/
 done
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.181.172 'if [ $(pidof java) ] ; then kill $(pidof java) ; fi; cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2; ./start-replica.sh -g replicas -n 0; exit;'
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@13.250.35.59 'if [ $(pidof java) ] ; then kill $(pidof java) ; fi; cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2; ./start-replica.sh -g replicas -n 1; exit;'
