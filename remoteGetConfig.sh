@@ -6,10 +6,12 @@ n=3 ; eval a$n="18.136.104.14"
 n=4 ; eval a$n="13.250.112.83"
 n=5 ; eval a$n="52.221.181.66"
 n=6 ; eval a$n="54.169.140.0"
+# replica
+n=7 ; eval a$n="13.229.71.175"
 
 mkdir -p /home/datlv/Documents/deevo/configproduction/
 rm -rf /home/datlv/Documents/deevo/configproduction/*
-for i in 1 2 3 4 5 6
+for i in 1 2 3 4 5 6 7
 do
     eval ip=\$a$i
     echo ${ip}
