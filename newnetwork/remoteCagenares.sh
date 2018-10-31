@@ -9,6 +9,8 @@ n=5 ; eval a$n="54.254.189.216"
 n=6 ; eval a$n="18.136.126.89"
 n=7 ; eval a$n="54.179.185.222"
 
+mkdir -p /home/datlv/Documents/deevo/configproduction/
+rm -rf /home/datlv/Documents/deevo/configproduction/*
 ## fabric ca for org1
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@13.229.67.40 'if [ $(pidof fabric-ca-server) ] ; then kill $(pidof fabric-ca-server) ; fi; cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./start-root-ca.sh -g org1 -r 0; sleep 5; ./generate-peer-tls.sh -g org1 -n 1; exit ;'
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@13.250.109.169 'if [ $(pidof fabric-ca-server) ] ; then kill $(pidof fabric-ca-server) ; fi; cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./start-root-ca.sh -g org2 -r 0; sleep 5;  ./generate-peer-tls.sh -g org2 -n 1; exit ;'
