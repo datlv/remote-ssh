@@ -6,13 +6,21 @@
 18.136.104.14 peer1.org3.deevo.io rca.org3.deevo.io 172.31.21.211
 13.250.112.83 peer1.org4.deevo.io rca.org4.deevo.io 172.31.30.123
 52.221.181.66 peer1.org5.deevo.io rca.org5.deevo.io  172.31.28.37
-54.169.140.0 orderer0.org0.deevo.io rca.org0.deevo.io 
-54.255.236.246 peer1.org1.deevo.io rca.org1.deevo.io
-18.136.105.95 peer1.org2.deevo.io rca.org2.deevo.io
-18.136.104.14 peer1.org3.deevo.io rca.org3.deevo.io
-13.250.112.83 peer1.org4.deevo.io rca.org4.deevo.io
-52.221.181.66 peer1.org5.deevo.io rca.org5.deevo.io
-54.169.140.0 orderer1.org0.deevo.io rca.org0.deevo.io
+54.169.140.0 orderer1.org0.deevo.io
+
+172.31.21.49 bft.node.0 rca.replicas.deevo.io
+172.31.20.234 bft.node.1
+172.31.17.165 bft.node.2
+172.31.23.12 bft.node.3
+
+172.31.23.12 peer1.org1.deevo.io rca.org1.deevo.io
+172.31.19.166 peer1.org2.deevo.io rca.org2.deevo.io
+172.31.21.211 peer1.org3.deevo.io rca.org3.deevo.io
+172.31.30.123 peer1.org4.deevo.io rca.org4.deevo.io
+172.31.28.37 peer1.org5.deevo.io rca.org5.deevo.io
+172.31.28.66 orderer1.org0.deevo.io rca.org0.deevo.io
+
+
 ./get-remote-config.sh -d /opt/gopath/src/github.com/deevotech/supply-chain-service/configs -t /home/datlv/Documents/deevo/tmp -p 54.169.140.0 -k /home/datlv/Documents/deevo/key/dev-full-rights.pem -g "org0 org1 org2 org3 org4 org5"
 
 
