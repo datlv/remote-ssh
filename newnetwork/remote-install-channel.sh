@@ -1,2 +1,3 @@
 #!/bin/bash
-ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@18.136.126.89 ' cd /opt/gopath/src/github.com/deevotech/supply-chain-network/scripts/; ./create-channel.sh -c mychannel; sleep 3; exit; '
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@18.136.126.89 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./create-channel.sh -c deevochannel -g "org1 org2 org3 org4 org5"; sleep 3; exit; '
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@18.136.126.89 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./create-channel.sh -c aimthaichannel -g "org1 org2 org3 org4 org5"; sleep 3; exit; '
