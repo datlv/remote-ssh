@@ -12,7 +12,7 @@ mv ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0 ${CONFIG_PATH}/crypto-
 
 mkdir -p ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/users
 mkdir -p ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/orderers
-mv ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/orderer1.org0.deevo.io ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/orderers/
+mv ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/orderer0.org0.deevo.io ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/orderers/
 mv ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/admin ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/users
 mv ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/users/admin ${CONFIG_PATH}/crypto-config/ordererOrganizations/org0.deevo.io/users/Admin@org0.deevo.io
 
@@ -25,7 +25,7 @@ do
     mkdir -p ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users
     mkdir -p ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/peers
     cp -R ${CONFIG_PATH}/orgs/${org}/msp ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io
-    cp -R ${CONFIG_PATH}/orgs/${org}/peer1.${org}.deevo.io ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/peers/
+    cp -R ${CONFIG_PATH}/orgs/${org}/peer0.${org}.deevo.io ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/peers/
     cp -R ${CONFIG_PATH}/orgs/${org}/admin ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/
     mv ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/admin ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/Admin@${org}.deevo.io
     KEYFILE=''
@@ -43,13 +43,13 @@ do
     done
     cat ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/User@${org}.deevo.io/msp/keystore/${KEYFILE} > ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/User@${org}.deevo.io/msp/keystore/key.pem
     rm ${CONFIG_PATH}/crypto-config/peerOrganizations/${org}.deevo.io/users/User@${org}.deevo.io/msp/keystore/${KEYFILE}
-    #cp -R ${CONFIG_PATH}/tls-peer1.${org}.deevo.io ${CONFIG_PATH}/crypto-config/
+    #cp -R ${CONFIG_PATH}/tls-peer0.${org}.deevo.io ${CONFIG_PATH}/crypto-config/
     #KEYFILE1=''
-    #for entry in `ls ${CONFIG_PATH}/crypto-config/tls-peer1.${org}.deevo.iokeystore/`; do
+    #for entry in `ls ${CONFIG_PATH}/crypto-config/tls-peer0.${org}.deevo.iokeystore/`; do
     #    KEYFILE1=${entry}
     #done
-    #cat ${CONFIG_PATH}/crypto-config/tls-peer1.${org}.deevo.iokeystore/${KEYFILE1} > ${CONFIG_PATH}/crypto-config/tls-peer1.${org}.deevo.iokeystore/key
-    #rm ${CONFIG_PATH}/crypto-config/tls-peer1.${org}.deevo.iokeystore/${KEYFILE1}
+    #cat ${CONFIG_PATH}/crypto-config/tls-peer0.${org}.deevo.iokeystore/${KEYFILE1} > ${CONFIG_PATH}/crypto-config/tls-peer0.${org}.deevo.iokeystore/key
+    #rm ${CONFIG_PATH}/crypto-config/tls-peer0.${org}.deevo.iokeystore/${KEYFILE1}
 done
 rm -rf ${CALIPER_PATH}/network/fabric/mynetwork
 cp -R ${CONFIG_PATH} ${CALIPER_PATH}/network/fabric/
