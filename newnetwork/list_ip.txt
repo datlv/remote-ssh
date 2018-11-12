@@ -1,9 +1,9 @@
-13.229.67.40 peer1.org1.deevo.io rca.org1.deevo.io
-13.250.109.169 peer1.org2.deevo.io rca.org2.deevo.io
-13.229.125.149 peer1.org3.deevo.io rca.org3.deevo.io
-54.179.181.86 peer1.org4.deevo.io rca.org4.deevo.io
-54.254.189.216 peer1.org5.deevo.io rca.org5.deevo.io
-18.136.126.89 orderer1.org0.deevo.io rca.org0.deevo.io
+13.229.67.40 peer0.org1.deevo.io rca.org1.deevo.io
+13.250.109.169 peer0.org2.deevo.io rca.org2.deevo.io
+13.229.125.149 peer0.org3.deevo.io rca.org3.deevo.io
+54.179.181.86 peer0.org4.deevo.io rca.org4.deevo.io
+54.254.189.216 peer0.org5.deevo.io rca.org5.deevo.io
+18.136.126.89 orderer0.org0.deevo.io rca.org0.deevo.io
 
 172.31.18.227 peer0.org1.deevo.io rca.org1.deevo.io
 172.31.17.27 peer0.org2.deevo.io rca.org2.deevo.io
