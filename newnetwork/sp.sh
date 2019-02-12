@@ -34,5 +34,6 @@ n=11 ; eval a$n="54.179.143.121";
 eval ip=\$a$i
 echo ${ip}
 ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@${ip}
-
+#./utils/get-remote-config.sh -d /home/ubuntu/deevo/sc-insight.deevo.io/configs -t /tmp/insight -p 18.136.126.89 -k /home/ubuntu/deevo/key/dev-full-rights.pem -g "org0 org1 org2 org3 org4 org5" -c "deevochannel aimthaichannel"
+#./utils/get-remote-config.sh -d /home/ubuntu/deevo/sc-status.deevo.io/configs -t /tmp/status -p x.x.x.x -k /var/ssh-keys/dev-full-rights.pem -g "org0 org1 org2 org3 org4 org5" -c "deevochannel aimthaichannel"
 

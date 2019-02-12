@@ -24,7 +24,7 @@ echo "install channel sleep 10 ..."
 ./remote-install-channel.sh
 sleep 10
 echo "install chaincode caliper test sleep 10 ..."
-#./remote-install-chaincode.sh
+./remote-install-chaincode.sh
 sleep 10
 echo "Copy config to caliper config folder and sleep 10 ..."
 #./generate-caliper-config.sh

@@ -1,4 +1,4 @@
 #!/bin/bash
-ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./create-channel.sh -c aimthaichannel; sleep 3; exit; '
-ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./create-channel.sh -c linnachannel; sleep 3; exit; '
-ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/scripts-1.2/; ./create-channel.sh -c deevochannel; sleep 3; exit; '
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/release-1.2/scripts/; ./create-channel.sh -c aimthaichannel; sleep 3; exit; '
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/release-1.2/scripts/; ./create-channel.sh -c linnachannel; sleep 3; exit; '
+ssh -p 22 -i /home/datlv/Documents/deevo/key/dev-full-rights.pem ubuntu@54.169.140.0 ' cd /opt/gopath/src/github.com/deevotech/sc-network.deevo.io/release-1.2/scripts/; ./create-channel.sh -c deevochannel; sleep 3; exit; '
